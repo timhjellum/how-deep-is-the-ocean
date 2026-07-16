@@ -1,4 +1,4 @@
-# Connect 4
+# How Deep is the Ocean?
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/37c5556f-280c-4904-8d49-44f210d1cc39/deploy-status)](https://app.netlify.com/projects/how-deep-is-the-ocean/deploys)
 
