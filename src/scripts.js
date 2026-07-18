@@ -8,5 +8,5 @@ import './images/favicon-32x32.png';
 import './images/favicon.ico';
 import './images/favicon-16x16.png';
 import './site.webmanifest';
-import "./scripts/game.js";
+import "./scripts/scripts.js";
 console.clear();
