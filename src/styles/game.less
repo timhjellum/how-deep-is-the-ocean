@@ -1,0 +1,17 @@
+canvas { display: block; cursor: none; image-rendering: pixelated; }
+#gameContainer { position: relative; width: 100vw; height: 100vh; }
+#hud { position: absolute; top: 10px; left: 10px; color: #1a3a5c; font-size: 14px; font-weight: 500; pointer-events: none; }
+#hud div { margin-bottom: 4px; }
+#lives { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); font-size: 20px; pointer-events: none; letter-spacing: 4px; }
+#speedBtn { position: absolute; top: 10px; right: 10px; padding: 6px 14px; background: rgba(255,255,255,0.7); border: 1px solid #aac; border-radius: 6px; font-size: 13px; cursor: pointer; color: #1a3a5c; }
+#overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(200,230,245,0.95); color: #1a3a5c; text-align: center; overflow-y: auto; padding: 20px; }
+#overlay h2 { font-size: 26px; font-weight: 700; margin-bottom: 6px; }
+#overlay .sub { font-size: 14px; color: #3a6a8c; margin-bottom: 18px; }
+.char-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-bottom: 20px; max-width: 520px; width: 100%; }
+.char-card { background: rgba(255,255,255,0.7); border: 2px solid #b0cce0; border-radius: 12px; padding: 12px 8px; cursor: pointer; transition: all 0.15s; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.char-card:hover { border-color: #1a6aaa; background: rgba(255,255,255,0.95); transform: translateY(-2px); }
+.char-card.selected { border-color: #1a6aaa; background: #d6eaff; box-shadow: 0 0 0 3px #1a6aaa55; }
+.char-card canvas { image-rendering: pixelated; }
+.char-name { font-size: 13px; font-weight: 600; color: #1a3a5c; }
+.char-type { font-size: 11px; color: #5a8aac; }
+#overlay p.tip { font-size: 13px; color: #3a6a8c; margin-bottom: 10px; }

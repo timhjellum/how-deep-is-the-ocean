@@ -1,0 +1,140 @@
+@layer hotdog {
+	.hotdog-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(255, 255, 255, 0.5);
+		place-content: center;
+		//opacity: 0;
+		//z-index: 66;
+		&[data-visibility="show"] {
+			animation: show 0.25s ease-in forwards;
+		}
+
+		&[data-visibility="hide"] {
+			animation: hide 0.25s ease-out forwards;
+		}
+
+		.ski-free {
+			//display: grid;
+			//grid-template-columns: 50% 50%;
+			//grid-template-rows: 50% 50%;
+			width: 90vw;
+			height: 90vh;
+
+			> * {
+				border: 5px blue;
+			}
+
+			&--hot-dogger {
+				//&.hide {
+				//	display: none;
+				//}
+
+				padding: 0;
+				aspect-ratio: 1;
+				padding: 0;
+				display: grid;
+				width: 100%;
+				grid-template-columns: repeat(63, 1.587301587301587%);
+				grid-template-rows: repeat(63, 1.587301587301587%);
+
+				span {
+					height: 100%;
+					width: 100%;
+					font-size: 0;
+					text-align: center;
+					display: block;
+				}
+
+				.border {
+					background-color: #000;
+				}
+
+				.gator,
+				.pom-pom {
+					background-color: #00f;
+				}
+
+				.hat {
+					background-color: #f00;
+				}
+
+				.face-color {
+					background-color: #eee;
+				}
+
+				.face-color-shadow {
+					background-color: #ccc;
+				}
+
+				.sweater {
+					background-color: #f0f;
+				}
+
+				.lenses {
+					background-color: #0f3;
+				}
+
+				.lense-reflection {
+					background-color: #3f3;
+				}
+
+				.lense-reflection-lighter {
+					background-color: #6f3;
+				}
+
+				.lense-reflection-lighest {
+					background-color: #9f3;
+				}
+
+				.ski {
+					background-color: #0ff;
+				}
+
+				.ski-red {
+					background-color: red;
+				}
+
+				.ski-white {
+					background-color: white;
+				}
+
+				.ski-blue {
+					background-color: blue;
+				}
+
+				.ski-letters {
+					background-color: #000;
+				}
+
+				.strap-dark {
+					background-color: #333;
+				}
+
+				.strap-light {
+					background-color: #666;
+				}
+
+				.delete {
+					background-color: transparent;
+				}
+			}
+		}
+
+		p {
+			font-family: var(--font-family);
+			font-style: normal;
+			font-size: 1rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #333;
+		}
+	}
+}

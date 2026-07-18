@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://snociety.netlify.app/sitemap.xml
